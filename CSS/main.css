@@ -1,0 +1,130 @@
+/***********************************************************************************************************
+                                               TAG SELECTIONS
+************************************************************************************************************/
+
+html {
+    background-color: #00adb5;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 98%;
+    background-color: #eeeeee;
+    margin: 0  auto; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding: 0 15px 0 ;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***********************************************************************************************************
+                                                GENERAL CONTENT 
+************************************************************************************************************/
+
+/************************
+Navigation bar
+*************************/
+
+
+.main-nav li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 15px 20px 0;
+    background-color: #00adb5;
+    margin-left: 0;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+
+/************************
+footer
+*************************/
+
+.footer-content p {
+    list-style: none;
+    margin-left: 15px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly ;
+    padding: 5px 15px 5px 0;
+    background-color: #00adb5;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/***********************************************************************************************************
+                                                HOME PAGE
+************************************************************************************************************/
+
+
+/************************
+figure and content
+*************************/
+.fig-content {
+    display: flex;
+    font-size: 70px;
+    width: 850px;
+    margin: 25px auto;
+}
+
+.fig-content
+img {
+    border: 5px solid #eeeeee;
+    border-radius: 25%;
+}
+
+.title {
+    margin: auto;
+    font-family: 'Merienda', cursive;
+    text-decoration: underline;
+    color: #00adb5;
+}
+
+span {
+    margin-right: 215px;
+}
+/************************
+Paragraphs
+*************************/
+.paragraphs {
+    margin-top: 0px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+
+/***********************************************************************************************************
+                                                HOBBIES PAGE
+************************************************************************************************************/
+figcaption {
+    text-align: center;
+    font-size: larger;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-container
+figure
+img {
+    border: 5px solid #00adb5;
+}

@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Merienda&display=swap" rel="stylesheet">
   <title>Steve Bazelais</title>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
+      <ul class='main-nav'>
         <li><a href="home.html">Home</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -16,15 +18,20 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Hi, I'm Steve</h1>
 
-    <figure>
+  <main>
+    <div class="intro">
+      <h1>Hi, I'm Steve</h1>
+    </div>
+    
+
+    <figure class='fig-content'>
       <img src="img/my-image.jpg" alt="my-picture" width="300">
-      
-      <h3>Web Developer</h3>
+      <figcaption class="title"><span>Web</span> Developer</figcaption>
     </figure>
 
+   
+    <div class="paragraphs">
       <p>I'm an Accountant professional who fell in love with creating websites. 
         Ever since then i've been working towards making a transition to that field. 
         I was always interested in gaining some sort of technical skill. However, 
@@ -39,9 +46,10 @@
           I found <em><a href="https://www.freecodecamp.org/">freecodecamp.com</a></em> that i realized web develoment was 
           more align with what I truly wanted to do and what I was passionate about. 
         </p>
+      </div>
   </main>
 
-  <footer>
+  <footer class="footer-content">
     <p><a href="https://github.com/sbazelais">Github</a></p>
     <p><a href="https://twitter.com/SMBazelais">Twitter</a></p>
     <p><a href="https://www.linkedin.com/in/stevebazelais">LinkedIn</a></p>
