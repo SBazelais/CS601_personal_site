@@ -13,6 +13,7 @@ body {
     background-color: rgb(224,255,255);
     margin: 0  auto; 
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 main {
@@ -24,15 +25,6 @@ a {
     text-decoration: none;
 }
 
-hr {
-    width: 25%;
-    margin-left: 0;
-    margin-bottom: 50px;
-    margin-top: 0;
-    border-width: 2px;
-    border-top: 0;
-    border-color: black;
-}
 
 
 
@@ -61,8 +53,13 @@ Navigation bar
 }
 
 .intro {
+    margin-top: -15px;
     font-family: 'Indie Flower', cursive;
     margin-bottom: 0;
+    border-bottom: 2px unset black;
+    border-right: 2px unset black;
+    width: 420px;
+    box-shadow: 6px 5px 5px #008b8b;
 }
 /************************
 footer
@@ -91,13 +88,14 @@ footer
     display: flex;
     font-size: 70px;
     width: 850px;
-    margin: 25px auto;
+    margin: 5px auto;
 }
 
 .fig-content
 img {
     border: 5px solid #eeeeee;
     border-radius: 25%;
+    
 }
 
 .title {
@@ -105,7 +103,19 @@ img {
     font-family: 'Merienda', cursive;
     text-decoration: underline;
     color: #00adb5;
+    animation-name: title;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes title {
+    from {color: #f8d7d7;}
+    to {color: #AED6F1 ;}
+    to {color: #85C1E9;}
+    to {color: #5DADE2 ;}
+    to {color: #00adb5;}
+  }
+
 
 span {
     margin-right: 215px;
@@ -137,7 +147,18 @@ figcaption {
 figure
 img {
     border: 5px solid #00adb5;
+    /* transition: width 2s, height 2s, transform 2s; */
 }
+
+
+
+/* .img-container
+figure
+img:hover{
+    width: 300px;
+  height: 250px;
+  transform: rotate(360deg);
+} */
 
 /***********************************************************************************************************
                                                 SKILLS PAGE
@@ -146,6 +167,7 @@ img {
     margin-bottom: 170px;
     display: flex;
     width: 70%;
+    margin-top: 100px;
 }
 
 .table-content {
@@ -167,4 +189,66 @@ th {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 35px;
+    margin-top: 100px;
+}
+
+/***********************************************************************************************************
+                                                CONTACT ME PAGE
+************************************************************************************************************/
+form {
+    width: 50%;
+    margin: 55px auto 140px;
+    padding: 10px;
+}
+
+legend {
+    font-size: large;
+}
+
+.fName {
+   margin-bottom: 5px;
+}
+
+.lName {
+    margin-bottom: 5px;
+ }
+ 
+.note {
+    margin-bottom: 5px;
+}
+
+/***********************************************************************************************************
+                                                RESUME PAGE
+************************************************************************************************************/
+#skills {
+    list-style: none;
+    line-height: 1.2rem;
+}
+
+#skills 
+li {
+    padding-bottom: 5px;
+}
+
+/***********************************************************************************************************
+                                                PLACES PAGE
+************************************************************************************************************/
+.img-container-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-container-two
+img, 
+.img-container
+img {
+    /* width: 300px;
+    height: 250px; */
+    margin: 10px;
+    transition: all 3s;
+    border: 5px solid #00adb5;
+}
+
+img:hover{
+    transform: scale(1.1);
 }
